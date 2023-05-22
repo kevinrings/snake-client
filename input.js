@@ -25,6 +25,16 @@ const handleUserInput = function (data) {
   if (data === "d") {
     connection.write("Move: right");
   }
+  if (key === 'h') {
+    connection.write(`Say: Hey`);
+  }
+  
+  if (key === 't') {
+    connection.write(`Say: Thanks`);
+  }
+  if (key === 'l') {
+    connection.write(`Say: lol`);
+  }
 
   if (data === "\u0003") {
     console.log("bye");
