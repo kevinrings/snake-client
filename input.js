@@ -25,14 +25,14 @@ const handleUserInput = function (data) {
   if (data === "d") {
     connection.write("Move: right");
   }
-  if (key === 'h') {
+  if (data === "h") {
     connection.write(`Say: Hey`);
   }
-  
-  if (key === 't') {
+
+  if (data === "t") {
     connection.write(`Say: Thanks`);
   }
-  if (key === 'l') {
+  if (data === "l") {
     connection.write(`Say: lol`);
   }
 
