@@ -13,6 +13,9 @@ const connect = function () {
     // code that does something when the connection is first established
     console.log(`Successfully connected to game server`);
     conn.write('Name: KWN')
+    // setInterval(() => {
+    //   conn.write('Move: up')
+    // }, 1000);
   });
 
   conn.on("data", (data) => {
